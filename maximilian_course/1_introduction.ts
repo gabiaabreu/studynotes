@@ -1,4 +1,8 @@
-/* JavaScript makes pages more reactive
+/* 
+
+1. INTRODUCTION
+
+JavaScript makes pages more reactive
 
 It can run in any device that has a JS engine (like V8 in Chrome and SpiderMonkey in Firefox).
 The engine 'reads' the script and then 'compiles' it as it runs. It watches the code, as it runs, analyzing data and possible optimizations.
@@ -17,6 +21,5 @@ and so on...
 These languages are converted (transpiled) to JS before they run in browser.
 
 Data types in JS are dinamically assumed and can change through code.
-
 
 */

@@ -1,39 +1,9 @@
-/*
-
-2. BASICS: Variables, operators, data types & functions
-
-JS code can be called inside .html files, in the tag <script> JS code </script>
-or using <script src="/path/to/script.js"> (you can place several of those if you want)
-OBS: code gets executed from top to bottom. The place you put it matters!
-
-* VARIABLES
-Variable naming: use camelCase in most cases
-human-readable and meaningful names
-keep it clean without special characters (excluding $ and _, which can be used)
-when naming hard-coded values, you could also go for something like: 
-*/
-
-const COLOR_RED: string = "#ff0000";
 
 /*
 
-OBS: don't name consts like that when their value is unknown at first.
+         * DATA TYPES
 
-'var' isn't used anymore. Always go for 'let' or 'const'.
-
-a 'shadowed variable' is a local variable which also exists as a global one
-
-* OPERATORS 
-+, -, *, /, %, **
-= is an assignment operator, not a comparison one
-
-typeof operator returns the type of something
-some special events:
-typeof Math is "object" (a built-in object for math operations)
-typeof null is "object" (it's an error. null is not an object.)
-
-* DATA TYPES
-1. NUMBER: integer or float
+    1. NUMBER: integer or float
 ! special numeric values: Infinity, -Infinity, NaN
 
 */
@@ -61,7 +31,7 @@ const myNaN: number = ("word" / 2);
 typescript won't even let me do that, as it prevents this kind of thing
 also, doing any kind of math is safe on JS. it won't crash.
 
-2. BIGINT: for values bigger than 9007199254740991, positive or negative
+    2. BIGINT: for values bigger than 9007199254740991, positive or negative
 number type could even store them, but as an approximate value.
 
 you could declare a BigInt like that, with the 'n' on the end,
@@ -73,7 +43,7 @@ const anotherBigNumber = BigInt(Number.MAX_SAFE_INTEGER); // 9007199254740991n
 
 /*
 
-3. STRING: "hi", 'hi' or `hi`
+    3. STRING: "hi", 'hi' or `hi`
 there's no character type in JS (like char in C or Java)
 
 */
@@ -83,16 +53,16 @@ const word: string = 'nice';
 
 /*
 
-4. BOOLEAN: true XOR false (it's an exclusive or)
+    4. BOOLEAN: true XOR false (it's an exclusive or)
 they can come as a result of a comparison.
 
-5. NULL: it's its own type.
+    5. NULL: it's its own type.
 a special value for: nothing. emptiness.
 
-6. UNDEFINED: also its own type.
+    6. UNDEFINED: also its own type.
 it means "value not assigned". it's the default initial value for unassigned things
 
-7. OBJECT: a remarkable type. this one isn't primitive like the others.
+    7. OBJECT: a remarkable type. this one isn't primitive like the others.
 objects are used to store collections of data, in key-value pairs
 functions are callable objects!
 
@@ -106,15 +76,7 @@ const myName = user.name;
 
 /*
 
-8. SYMBOL: is used to create unique identifiers for objects. yes it's a type!
-
-converting types:
-parseInt(), parseFloat()
-
-3 + '3' = 33
-3 * '3' = 9
-3 - '3' = 0
-strings only support + operator
+    8. SYMBOL: is used to create unique identifiers for objects. yes it's a type!
 
 ! is ARRAY a data type? no! it's considered a data structure. it can store values of
 any data type, but isn't one itself.
@@ -122,20 +84,51 @@ MDN says that "arrays are regular objects for which there is a particular relati
 Additionally, arrays inherit from Array.prototype, which provides a handful of convenient methods to manipulate arrays"
 we'll take a look at that further, in data structures.
 
-* FUNCTIONS
 
-function name(param: ParamType) {}
+    ** TYPE CONVERSION:
+parseInt(), parseFloat(), String(), Number()
 
-fun fact: JS will read your file before executing it, take all functions and
-put them first, so there's no difference in where you put them in the code.
-you can call a function first and later define it.
+3 + '3' = 33 
+if it's a + operation and one of the operators is a string, the other will be converted to string
 
-return stops a function, anything after it won't be read
+strings only support + operator without being converted to numbers:
+3 * '3' = 9 
+3 - '3' = 0 
+'6' / '2' = 3 
+see? strings were converted to numbers.
 
-const button = document.getElementById("click-me-btn");
-button.addEventListener('click', addNumbers(1, 2));
+2 + 2 + '1' = 41
+'1' + 2 + 2 = 122
+the order matters
 
+fun fact: + operator also converts things into numbers, just like Number().
+ 
+*/ 
+
++true // 1
++'' // 0
+
+Number(undefined) // NaN
+Number(null) // 0
+Number(1) // true
+Number(0) // false
+
+/*
+
+if you do Number(string):
+	Whitespaces (includes spaces, tabs \t, newlines \n etc.) from the start and end are removed. 
+    If the remaining string is empty, the result is 0. 
+    Otherwise, the number is “read” from the string. An error gives NaN.
+
+
+you could also try converting to boolean:
 
 */
 
+Boolean(0) // false
+Boolean('') // false
+Boolean(null) // false
+Boolean(undefined) // false
+Boolean(NaN) // false
+Boolean('any other values') // true. a non empty string is always true, even if it's '0'
 

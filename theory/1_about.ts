@@ -1,6 +1,6 @@
 /* 
 
-1. INTRODUCTION
+    1. INTRODUCTION
 
 JavaScript makes pages more reactive
 
@@ -21,5 +21,9 @@ and so on...
 These languages are converted (transpiled) to JS before they run in browser.
 
 Data types in JS are dinamically assumed and can change through code.
+
+JS code can be called inside .html files, in the tag <script> JS code </script>
+or using <script src="/path/to/script.js"> (you can place several of those if you want)
+OBS: code gets executed from top to bottom. The place you put it matters!
 
 */

@@ -1,0 +1,15 @@
+C:\Código\csharp\PrimeiroPrograma\PrimeiroPrograma\bin\Debug\net6.0\PrimeiroPrograma.exe
+C:\Código\csharp\PrimeiroPrograma\PrimeiroPrograma\bin\Debug\net6.0\PrimeiroPrograma.deps.json
+C:\Código\csharp\PrimeiroPrograma\PrimeiroPrograma\bin\Debug\net6.0\PrimeiroPrograma.runtimeconfig.json
+C:\Código\csharp\PrimeiroPrograma\PrimeiroPrograma\bin\Debug\net6.0\PrimeiroPrograma.dll
+C:\Código\csharp\PrimeiroPrograma\PrimeiroPrograma\bin\Debug\net6.0\PrimeiroPrograma.pdb
+C:\Código\csharp\PrimeiroPrograma\PrimeiroPrograma\obj\Debug\net6.0\PrimeiroPrograma.csproj.AssemblyReference.cache
+C:\Código\csharp\PrimeiroPrograma\PrimeiroPrograma\obj\Debug\net6.0\PrimeiroPrograma.GeneratedMSBuildEditorConfig.editorconfig
+C:\Código\csharp\PrimeiroPrograma\PrimeiroPrograma\obj\Debug\net6.0\PrimeiroPrograma.AssemblyInfoInputs.cache
+C:\Código\csharp\PrimeiroPrograma\PrimeiroPrograma\obj\Debug\net6.0\PrimeiroPrograma.AssemblyInfo.cs
+C:\Código\csharp\PrimeiroPrograma\PrimeiroPrograma\obj\Debug\net6.0\PrimeiroPrograma.csproj.CoreCompileInputs.cache
+C:\Código\csharp\PrimeiroPrograma\PrimeiroPrograma\obj\Debug\net6.0\PrimeiroPrograma.dll
+C:\Código\csharp\PrimeiroPrograma\PrimeiroPrograma\obj\Debug\net6.0\refint\PrimeiroPrograma.dll
+C:\Código\csharp\PrimeiroPrograma\PrimeiroPrograma\obj\Debug\net6.0\PrimeiroPrograma.pdb
+C:\Código\csharp\PrimeiroPrograma\PrimeiroPrograma\obj\Debug\net6.0\PrimeiroPrograma.genruntimeconfig.cache
+C:\Código\csharp\PrimeiroPrograma\PrimeiroPrograma\obj\Debug\net6.0\ref\PrimeiroPrograma.dll

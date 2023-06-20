@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Código\\csharp\\EstruturaDeDados\\EstruturaDeDados\\EstruturaDeDados.csproj": {}
+    "C:\\Código\\studynotes\\csharp\\EstruturaDeDados\\EstruturaDeDados\\EstruturaDeDados.csproj": {}
   },
   "projects": {
-    "C:\\Código\\csharp\\EstruturaDeDados\\EstruturaDeDados\\EstruturaDeDados.csproj": {
+    "C:\\Código\\studynotes\\csharp\\EstruturaDeDados\\EstruturaDeDados\\EstruturaDeDados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Código\\csharp\\EstruturaDeDados\\EstruturaDeDados\\EstruturaDeDados.csproj",
+        "projectUniqueName": "C:\\Código\\studynotes\\csharp\\EstruturaDeDados\\EstruturaDeDados\\EstruturaDeDados.csproj",
         "projectName": "EstruturaDeDados",
-        "projectPath": "C:\\Código\\csharp\\EstruturaDeDados\\EstruturaDeDados\\EstruturaDeDados.csproj",
+        "projectPath": "C:\\Código\\studynotes\\csharp\\EstruturaDeDados\\EstruturaDeDados\\EstruturaDeDados.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Código\\csharp\\EstruturaDeDados\\EstruturaDeDados\\obj\\",
+        "outputPath": "C:\\Código\\studynotes\\csharp\\EstruturaDeDados\\EstruturaDeDados\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

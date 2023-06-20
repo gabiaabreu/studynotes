@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace EstruturaDeDados
@@ -40,9 +41,9 @@ namespace EstruturaDeDados
             listaProdutos.Add(segundoProduto);
 
             // imprimindo valores da lista
-            foreach (Produto item in listaProdutos)
+            foreach (Produto produto in listaProdutos)
             {
-                Console.WriteLine(item.Nome + " " + item.Quantidade + " unidade(s)");
+                Console.WriteLine(produto.Nome + " " + produto.Quantidade + " unidade(s)");
             }
 
             // alterando valor da lista
@@ -52,10 +53,9 @@ namespace EstruturaDeDados
             lista.RemoveAt(2); // por índice
             lista.Remove("Requeijão"); // por item
 
-            foreach (string item in lista)
-            {
-                Console.WriteLine(item);
-            }
+            // acessando valor da lista
+            string meuItem = lista[1];
+            Console.WriteLine(meuItem); // Abobrinha
 
             /*
              * 
@@ -104,6 +104,100 @@ namespace EstruturaDeDados
             else
             {
                 Console.WriteLine("Não foi possível encontrar o valor");
+            }
+
+            // acessando valor
+            string value = dict[4];
+
+            /*
+            * 
+            * 
+            * FILA
+            * First In First Out
+            * 
+            * 
+            */
+
+            Queue<string> fila = new Queue<string>();
+
+            // inserindo valores
+            fila.Enqueue("Gabi");
+            fila.Enqueue("Matheus");
+            fila.Enqueue("Daniela");
+
+            // acessando primeiro item da fila
+            Console.WriteLine(fila.Peek()); // Gabi
+
+            // removendo item
+            fila.Dequeue(); // tira Gabi
+
+            // contando itens
+            Console.WriteLine(fila.Count()); // 2
+
+            // exibindo itens
+            foreach (var pessoa in fila)
+            {
+                Console.WriteLine(pessoa); // Matheus Daniela
+            }
+
+            /*
+            * 
+            * 
+            * PILHA
+            * Last In First Out
+            * 
+            * 
+            */
+
+            Stack<string> pilhaGenerica = new Stack<string>();
+            // a pilha genérica é obrigatoriamente tipada
+
+            Stack pilhaNaoGenerica = new Stack();
+            // a pilha não genérica é dinamicamente tipada, pode armazenar vários tipos
+            // ao retirar objeto da pilha, necessário fazer conversão de tipo 
+            // usa System.Collections
+
+            // adicionando itens
+            pilhaGenerica.Push("Mcdonalds");
+
+            pilhaNaoGenerica.Push("Burger King");
+            pilhaNaoGenerica.Push(49);
+            pilhaNaoGenerica.Push(1.20);
+
+            // retirando último item
+            string valorRetirado = pilhaGenerica.Pop();
+
+            double valorRetiradoDnv = (double)pilhaNaoGenerica.Pop();
+
+            // imprimindo valores
+            foreach (string valor in pilhaGenerica)
+            {
+                Console.WriteLine(valor);
+            }
+
+            foreach (var valor in pilhaNaoGenerica)
+            {
+                Console.WriteLine(valor);
+            }
+
+            // acessando último valor
+            pilhaGenerica.Peek();
+
+            /* Se você deseja acessar outros elementos da não há um método específico para fazer isso diretamente.
+            A natureza da pilha é que você só tem acesso ao elemento do topo. Para acessar outros elementos, 
+            você precisará remover os elementos superiores usando o método Pop() até chegar ao elemento desejado. */
+
+            // Remover elementos até chegar ao elemento desejado
+            Stack<int> pilhaExemplo = new Stack<int>();
+            int thing;
+            while (pilhaExemplo.Count > 0)
+            {
+                thing = pilhaExemplo.Pop();
+                if (thing == 20)
+                {
+                    Console.WriteLine(thing); // Saída: 20
+                    break;
+                }
             }
         }
     }

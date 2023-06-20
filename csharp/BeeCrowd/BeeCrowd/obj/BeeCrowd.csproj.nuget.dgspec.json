@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\reskillingcsharp\\BeeCrowd\\BeeCrowd\\BeeCrowd.csproj": {}
+    "C:\\Código\\studynotes\\csharp\\BeeCrowd\\BeeCrowd\\BeeCrowd.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\reskillingcsharp\\BeeCrowd\\BeeCrowd\\BeeCrowd.csproj": {
+    "C:\\Código\\studynotes\\csharp\\BeeCrowd\\BeeCrowd\\BeeCrowd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\reskillingcsharp\\BeeCrowd\\BeeCrowd\\BeeCrowd.csproj",
+        "projectUniqueName": "C:\\Código\\studynotes\\csharp\\BeeCrowd\\BeeCrowd\\BeeCrowd.csproj",
         "projectName": "BeeCrowd",
-        "projectPath": "C:\\Projetos\\reskillingcsharp\\BeeCrowd\\BeeCrowd\\BeeCrowd.csproj",
-        "packagesPath": "C:\\Users\\gabriela.abreu\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\reskillingcsharp\\BeeCrowd\\BeeCrowd\\obj\\",
+        "projectPath": "C:\\Código\\studynotes\\csharp\\BeeCrowd\\BeeCrowd\\BeeCrowd.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Código\\studynotes\\csharp\\BeeCrowd\\BeeCrowd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gabriela.abreu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

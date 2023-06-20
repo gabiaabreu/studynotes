@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace BeeCrowd
@@ -24,9 +25,60 @@ namespace BeeCrowd
         //    posições da primeira letra onde a palavra está localizada no respectivo texto.
         //    Caso a palavra não esteja contida no texto, retorne -1
 
-        static void Main(string[] args)
-        {
+        //static void Main(string[] args)
+        //{
+        //    int N = int.Parse(Console.ReadLine()); // quantidade de textos e de palavras (1 pra cada)
 
-        }
+        //    List<int> indicesAchados = new List<int>();
+        //    List<string> resultados = new List<string>();
+
+        //    for (int i = 0; i < N; i++)
+        //    {
+        //        indicesAchados.Clear();
+        //        string texto = Console.ReadLine();
+        //        string palavra = Console.ReadLine();
+
+        //        int indice = texto.IndexOf(palavra);
+        //        if (indice == -1)
+        //        {
+        //            indicesAchados.Add(-1);
+        //        }
+
+        //        while (indice != -1)
+        //        {
+        //            bool palavraCompleta = VerificarPalavraCompleta(texto, palavra, indice);
+        //            if (palavraCompleta)
+        //            {
+        //                if (indicesAchados.Contains(-1))
+        //                {
+        //                    indicesAchados.RemoveAll(x => x == -1);
+        //                }
+        //                indicesAchados.Add(indice);
+        //            }
+        //            else
+        //            {
+        //                if (indicesAchados.Count == 0)
+        //                {
+        //                    indicesAchados.Add(-1);
+        //                }
+        //            }
+        //            indice = texto.IndexOf(palavra, indice + 1);
+        //        }
+        //        resultados.Add(string.Join(" ", indicesAchados));
+        //    }
+        //    foreach (string resultado in resultados)
+        //    {
+        //        Console.WriteLine(resultado);
+        //    }
+        //}
+
+        //private static bool VerificarPalavraCompleta(string texto, string palavra, int indice)
+        //{
+        //    bool semLetraAntes = indice == 0 || !char.IsLetterOrDigit(texto[indice - 1]);
+        //    bool semLetraDepois = (indice + palavra.Length == texto.Length) ||
+        //        !char.IsLetterOrDigit(texto[indice + palavra.Length]);
+
+        //    return semLetraAntes && semLetraDepois;
+        //}
     }
 }
